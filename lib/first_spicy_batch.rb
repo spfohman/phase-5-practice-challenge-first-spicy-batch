@@ -4,5 +4,10 @@
 # def is_spicy_batch(batch):
 
 def first_spicy_batch(n)
-  # your code here
+  puts n
+  n.find do |batch|
+    if is_spicy_batch(n)
+      return n 
+    end
+  end
 end
